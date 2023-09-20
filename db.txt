@@ -1,0 +1,46 @@
+create database HotelManagementSystem;
+use HotelManagementSystem;
+
+create table login(
+username varchar(25),
+pass varchar(25)
+);
+
+insert into login values ('admin','12345');
+
+select * from login;
+
+create table employee(
+name varchar(40),
+age varchar(10),
+gender varchar(15),
+job varchar(30),
+salary varchar(15),
+phone varchar(15),
+pan varchar(30),
+email varchar(50)
+);
+
+select * from employee;
+
+create table room(
+roomnumber varchar(10),
+available varchar(15),
+clean varchar(15),
+price varchar(10),
+type varchar(20)
+);
+
+select *from room;
+
+create table driver(
+name varchar(40),
+age varchar(10),
+gender varchar(15),
+company varchar(30),
+model varchar(25),
+available varchar(15),
+location varchar(30)
+);
+
+select *from driver;
